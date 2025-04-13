@@ -9,6 +9,7 @@
   border-radius: 40px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .hero h1 {
@@ -39,6 +40,12 @@
   border-radius: 100px;
   display: inline-flex;
   align-items: center;
+}
+
+.hero a img{
+  margin-left: 8px;
+  line-height: 1;
+  display: none;
 }
 
 .hero a::after {
@@ -165,13 +172,13 @@
 }
 
 .about-images .image-big {
-  height: 590px;
-  width: 660px;
+  max-height: 590px;
+  max-width: 660px;
 }
 
 .about-images .image-small {
-  height: 430px;
-  width: 660px;
+  max-height: 430px;
+  max-width: 660px;
 }
 
 .app {
@@ -250,67 +257,61 @@
     line-height: 150%;
 }
 
-/* footer{
-    margin-bottom: 40px;
-}
+@media (max-width:768px){
+  .hero-wrapper {
+    padding-left: 68px;
+    padding-right: 68px;
+  }
 
-.footer-wrapper{
-    padding: 100px;
-    background-color: #665F55;
-    border-radius: 40px;
-    display: flex;
+  .about-images{
+    flex-direction: column;
     align-items: center;
-    gap: 100px;
-}
+  }
+  .image-small{
+    display: none;
+  }
 
-.footer-left{
-    display: flex;
+  .about-images-left, .about-images-right {
+  flex-direction: row;
+  }
+
+  .app-wrapper{
     flex-direction: column;
-    gap: 40px;
-    max-width: 530px;
+  }
 }
 
-.footer-left h2{
-    font-weight: 600;
-    font-size: 60px;
-    line-height: 125%;
-    color: #E1D4C9;
-}
+@media(max-width:576px){
+  .hero-wrapper{
+    padding: 60px 16px;
+  }
 
-.footer-socials{
-    display: flex;
-    gap: 12px;
-}
+  .hero h1{
+    font-size: 42px;
+    line-height: 114%;
 
-.footer-left a{
-    border: 1px solid #C1B6AD;
-    border-radius: 50%;
-    padding:15px 17px;
-}
+  }
 
-.footer-right h3{
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 125%;
-    color: #E1D4C9;
-    margin-bottom: 40px;
-}
+  .hero a{
+    padding: 20px 64px;
+  }
 
-footer ul{
-    display: flex;
+  .hero a img{
+    display: block;
+  }
+
+  .drinks h2{
+    font-size: 32px;
+  }
+
+  .about h2{
+    font-size: 32px;
+  }
+
+  .app h2 {
+    font-size: 32px;
+  }
+
+  .app-links{
     flex-direction: column;
-    gap: 20px;
+  }
 }
-
-.footer-li-item{
-    display: flex;
-    gap: 8px;
-}
-
-.footer-li-item p{
-font-weight: 600;
-font-size: 16px;
-line-height: 150%;
-color: #E1D4C9;
-} */
-
