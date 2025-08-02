@@ -72,14 +72,14 @@
     transform: scaleX(1);
   }
   
-  header .menu {
+  header .header-menu {
     display: flex;
     gap: 8px;
     max-height: 72px;
     position: relative;
   }
 
- header .menu::after{
+ header .header-menu::after{
     content: "";
     position: absolute;
     left: 0;
@@ -91,7 +91,7 @@
     transition: transform 0.4s ease;
   }
 
-  header .menu:hover::after {
+  header .header-menu:hover::after {
     transform: scaleX(1);
   }
 
@@ -206,7 +206,7 @@ footer ul{
     header nav {
       display: none ;
     }
-     header .menu {
+     header .header-menu {
       display: none;
     }
   
